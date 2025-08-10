@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Farmers' Market - Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Local Farmers' Market</h1>
+        <p>Fresh produce, handmade goods, and a warm community — every Saturday and Sunday at the town square.</p>
+    </header>
+
+    <main>
+        <!-- Lists -->
+        <section>
+            <h2>Highlights of Our Market</h2>
+            <ul>
+    <li>
+        Fresh organic fruits and vegetables.
+        <ol>
+            <li>Strawberries</li>
+            <li>Avocados</li>
+            <li>Spinach</li>
+            <li>Groundnuts</li>
+        </ol>
+    </li>
+    <li>Handmade crafts and art.</li>
+    <li>Live acoustic music performances.</li>
+    <li>Locally sourced dairy and bakery items.</li>
+</ul>
+        </section>
+
+        <!-- Table -->
+        <section>
+            <h2>Sample Price List</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price (per kg)</th>
+                        <th>Season</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Strawberries</td>
+                        <td>Ksh400.00</td>
+                        <td>Spring</td>
+                    </tr>
+                    <tr>
+                        <td>Avocados</td>
+                        <td>Ksh300.00</td>
+                        <td>Autumn</td>
+                    </tr>
+                    <tr>
+                        <td>Spinach</td>
+                        <td>Ksh200.00</td>
+                        <td>Winter</td>
+                    </tr>
+                    <tr>
+                        <td>Groundnuts</td>
+                        <td>Ksh700.00</td>
+                        <td>Summer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media -->
+        <section>
+            <h2>Market in Action</h2>
+            <figure>
+                <img src="https://images.pexels.com/photos/3873787/pexels-photo-3873787.jpeg" alt="Vendors selling produce at the farmers' market" width="500">
+                <figcaption>Our colorful market on a sunny Saturday morning.</figcaption>
+            </figure>
+            <p>Enjoy this short audio clip from our live musicians:</p>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Form -->
+        <section>
+            <h2>Vendor Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required minlength="3"><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+                    
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="07-57-398-306" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Details</legend>
+                    
+                    <label for="business-name">Business Name:</label><br>
+                    <input type="text" id="business-name" name="business-name" placeholder="Fresh & Tasty" required><br><br>
+                    
+                    <label for="product-type">Type of Products:</label><br>
+                    <select id="product-type" name="product-type" required>
+                        <option value="">--Select--</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="baked">Baked Goods</option>
+                        <option value="crafts">Handmade Crafts</option>
+                    </select><br><br>
+                    
+                    <label>Preferred Stall Location:</label><br>
+                    <input type="radio" id="front" name="stall" value="front" required>
+                    <label for="front">Front Row</label>
+                    <input type="radio" id="middle" name="stall" value="middle">
+                    <label for="middle">Middle</label>
+                    <input type="radio" id="back" name="stall" value="back">
+                    <label for="back">Back Row</label><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    
+                    <label for="website">Website (optional):</label><br>
+                    <input type="url" id="website" name="website" placeholder="https://yourbusiness.com"><br><br>
+                    
+                    <label for="start-date">Available Start Date:</label><br>
+                    <input type="date" id="start-date" name="start-date" required><br><br>
+                    
+                    <label for="notes">Special Requests:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Any special requirements..."></textarea>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear Form">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Local Farmers' Market | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
